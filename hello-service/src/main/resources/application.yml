@@ -9,7 +9,7 @@ opentracing:
     #enable-b3-propagation: true
 spring:
   application:
-    name: hello-service
+    name: account-service
 
 logging:
   level:
