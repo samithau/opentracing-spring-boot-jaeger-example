@@ -5,11 +5,11 @@ opentracing:
   jaeger:
     http-sender:
       #url: http://localhost:14268/api/traces
-      url: http://${JAEGER_HOST}:14268/api/traces
+      url: http://jaeger-production-collector.tracing-system.svc.cluster.local:4318/v1/traces
     #enable-b3-propagation: true
 spring:
   application:
-    name: hello-service
+    name: account-service
 
 logging:
   level:
